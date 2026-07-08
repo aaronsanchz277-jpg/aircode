@@ -1,1 +1,8 @@
-
+{
+  "name": "aircode-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r --parallel run dev"
+  }
+}
