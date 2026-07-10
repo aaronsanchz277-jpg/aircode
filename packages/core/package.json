@@ -1,1 +1,20 @@
-
+{
+  "name": "@aircode/core",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && node scripts/copy-grammars.mjs",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@aircode/shared": "workspace:*",
+    "web-tree-sitter": "^0.22.6",
+    "tree-sitter-wasms": "^0.1.11",
+    "@duckdb/node-api": "^1.1.3",
+    "simple-git": "^3.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20"
+  }
+}
