@@ -1,1 +1,24 @@
-
+{
+  "name": "aircode",
+  "displayName": "AIR-Code",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.85.0" },
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "aircode.analyzeIdea", "title": "AIR-Code: Analizar idea" },
+      { "command": "aircode.reindexAll", "title": "AIR-Code: Reindexar todo" }
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@aircode/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  }
+}
