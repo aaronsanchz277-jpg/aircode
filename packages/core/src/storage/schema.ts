@@ -25,7 +25,9 @@ CREATE TABLE IF NOT EXISTS symbol (
     line_start INTEGER,
     line_end INTEGER,
     scope TEXT,
-    docstring TEXT
+    docstring TEXT,
+    snippet TEXT,
+    complexity INTEGER DEFAULT 1
 );
 CREATE INDEX IF NOT EXISTS idx_symbol_name ON symbol(name);
 CREATE INDEX IF NOT EXISTS idx_symbol_file_id ON symbol(file_id);
